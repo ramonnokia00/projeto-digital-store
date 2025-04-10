@@ -121,4 +121,20 @@ header {
             }
         }
     }
+    main {
+            .banner {
+            display: flex;
+            justify-content: center;
+            padding-top: 1440px;
+            padding-bottom: 681px;
+            background-color: #F5F5F5;
+            .p{
+                color: yellow;
+            }
+            h1{
+                
+            }
+            }
+        
+    }
 }

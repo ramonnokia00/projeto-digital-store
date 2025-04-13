@@ -232,7 +232,6 @@ main {
                 padding: 0 15px;
                 display: inline-block;
                 margin-bottom: 10px;
-                line-height: 32px;
 
             }
 
@@ -300,26 +299,198 @@ main {
         }
     }
 }
-#produtos{
+
+#produtos {
     margin-top: 120px;
     padding: 0 100px;
-    .titulo{
+
+    .titulo {
         display: flex;
         justify-content: space-between;
         margin-left: 100px;
         margin-right: 100px;
         color: #474747;
-        a{
+
+        a {
             color: #C92071;
         }
     }
-    .cards{
+
+    .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 24px;
-    .imagem{
-     background-color: white;
-    
+        margin-top: 50px;
+
+        .card {
+
+            & a {
+                display: block;
+                color: black;
+
+                .imagem {
+                    box-shadow: 0 0 50px #00000015;
+                    height: 320px;
+                    border-radius: 4px;
+                    padding: 20px;
+                    margin-bottom: 18px;
+
+                    h6 {
+                        background-color: yellow;
+                        text-transform: uppercase;
+                        border-radius: 20px;
+                        font-size: 17px;
+                        line-height: 32px;
+                        margin-left: 15px;
+                        flex: 1;
+                        display: inline-block;
+                    }
+
+                    span {
+                        color: #8F8F8F;
+                        font-size: 12px;
+                        line-height: 24px;
+
+                    }
+                }
+            }
+        }
     }
 }
+
+#Air_jordan {
+    background-color: #F5F5F5;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+
+    .jordan {
+
+        .circle {
+            position: absolute;
+            width: 466px;
+            height: 466px;
+            background-color: #4200FF80;
+            border-radius: 50%;
+            bottom: -2175px;
+            left: 250px;
+            z-index: 1;
+            opacity: 0.4;
+
+        }
+
+        img {
+            width: 573px;
+            margin: 115px 140px 108px 52px;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    .textos {
+        h6 {
+            color: #C92071;
+            font-size: 22px;
+            margin-bottom: 15px;
+            margin-top: 80px;
+        }
+
+        h1 {
+            color: #474747;
+            margin-bottom: 15px;
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 22px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            width: 220px;
+            font-size: 18px;
+        }
+    }
+
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    
+
+    .primario {
+        margin-left: 150px;
+        padding-top: 50px;
+
+        p {
+            padding-top: 20px;
+        }
+
+        .cones {
+
+
+            margin-top: 60px;
+            margin-bottom: 20px;
+
+            a {
+                display: flex;
+                gap: 25px;
+            }
+        }
+    }
+
+    .lista_fora {
+        
+        margin-left: 150px;
+        padding-top: 50px;
+        gap: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        ;
+
+        .lista_dentro {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            a {
+                margin-bottom: 10px;
+                margin-top: 10px;
+                color: white;
+            }
+
+            p {
+                margin-bottom: 10px;
+                margin-right: 20px;
+            }
+
+        }
+    }   
+}
+.data{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    border-top: #474747 2px solid;
+    font-size: 12px;
+    color: gray;
+    width: 100%;
+    
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px
+        
+    }
+
 }
